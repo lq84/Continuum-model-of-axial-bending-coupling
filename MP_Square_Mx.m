@@ -199,8 +199,8 @@ u4y=u0y+e22*Lxy*sin(ori(4))+u21*Lxy*cos(ori(4));
 
 
 %% Mcdowell
-d=[u0x;u0y;psi0;u1x;u1y;psi1;u2x;u2y;psi2;u3x;u3y;psi3;u4x;u4y;psi4;];
-w=d'*K_OAtoD*d/(2*V);
+d=[u1x;u1y;psi1;u2x;u2y;psi2;u3x;u3y;psi3;u4x;u4y;psi4;];
+w=d'*K_AtoD*d/(2*V);
 
 %% Q
 c1=diff(w,e11,e11);c2=diff(w,e11,e22);c3=diff(w,e11,e12);
