@@ -11,7 +11,7 @@ close all
 global L e22 nely nelx D macroWidth macroHeight nn IEN coords
 
 %Calculate the Micropolar continuum properties.
-L=90; % Total length, mm
+L=0.09; % Total length, m
 e22=-0.015; % Applied strain
 N=8; a=L/N; t=0.1*a; theta=30;
 D = MP_Square_Mx(a,t,theta)
